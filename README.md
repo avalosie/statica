@@ -1,3 +1,8 @@
-# HELLO WORLD!
-Statica here, recently started learning Python for organizing and manipulating data-sets. The goal is to knockout a few projects on here 
-that will give me more experience with the language. 
+data.csv('https://adventofcode.com/2019/day/1/input','r')
+
+fuel = 0
+
+for (i in 1:nrow(data)) {
+  num = floor(data[i,1] / 3) - 2
+  fuel = fuel + num
+}
